@@ -1,9 +1,13 @@
 :root {
     --primary-color: rgba(18, 109, 255);
-    --heading-font-family: "Bodoni Moda", serif;
+    --heading-font-family:"Yeseva One",
+        serif;
+    --title-font-family: "Playfair Display",
+        serif;
     --p-font-family: "Raleway", sans-serif;
 }
 
 h1{
     color: rgb(125, 173, 255);
+    font-family: var(--heading-font-family);
 }
