@@ -221,6 +221,11 @@ section.secondary {
 background-color: #fef1e6;
 
 }
+
+section.table-container{
+    background-color: rgb(240, 248, 255, 0.5);
+}
+
 td {
     font-style: italic;
     font-size: 13px;
