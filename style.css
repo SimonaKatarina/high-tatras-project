@@ -17,9 +17,11 @@ body{
 .text-center {
     text-align: center;
 }
-
-
-
+section.gallery {
+    margin: 20px;
+    border: 1px solid #0098df;
+    border-radius: 30px;
+}
 .grid {
     display: grid;
     grid-gap: 64px;
@@ -214,6 +216,7 @@ section.secondary {
 background-color: #fef1e6;
 
 }
+
 
 footer{
     color:#fef1e6;
