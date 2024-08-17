@@ -39,8 +39,13 @@ body{
 
 .embed {
     width: 100%;
+    border-radius: 5px;
 }
 
+.shadow {
+    box-shadow: -11px 10px 32px 5px #988f7f96;
+    border-radius: 15px;
+}
 .card {
     background: white;
     border: 5px solid white;
@@ -206,7 +211,7 @@ section {
 }
 
 section.secondary {
-background-color: #ffa52638;
+background-color: #fef1e6;
 
 }
 
