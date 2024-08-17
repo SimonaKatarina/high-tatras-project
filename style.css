@@ -108,6 +108,7 @@ header{
     font-family: var(--heading-font-family);
     padding: 180px 0;
 }
+
  header h1{
     font-family:var(--heading-font-family);
     font-size: 94px;
