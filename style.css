@@ -14,6 +14,12 @@ body{
     margin: 0 auto;
 }
 
+.text-center {
+    text-align: center;
+}
+
+
+
 .grid {
     display: grid;
     grid-gap: 64px;
@@ -22,15 +28,62 @@ body{
 .grid-2-columns{
     grid-template-columns: 1fr 1fr;
 }
+
+.grid-3-columns {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .grid-3-columns-narrow{
     grid-template-columns: 1fr 2fr 2fr;
 }
 
-section {
-    max-width: 1200px;
-    margin: 0;
-    padding: 100px 10px;
+
+
+.card {
+    background: white;
+    border: 5px solid white;
+    border-radius: 10px;
 }
+
+.card-body {
+  padding: 35px;  
+}
+
+.card-footer {
+    padding: 0px 30px 40px 30px;
+}
+
+
+.btn:hover{
+    color: #fef1e6;
+    background-color:#1f84f753;
+    border: 1px solid #0098df;
+}
+.btn {
+    display: block;
+    color: white;
+    background-color: #0098dfb5;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 5px;
+    text-decoration: none;
+
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 20px ;
+
+}
+.img-responsive {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+
 
 header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/tatry-4.jpg");
@@ -78,7 +131,8 @@ header a {
     letter-spacing: 3px;
     text-decoration: none;
     text-transform: uppercase;
-    background:rgb(215, 231, 255, 0.9);
+    background:rgb(215, 231, 255);
+    border: 4px solid rgba(255, 255, 255, 0.2);
     padding: 12px 24px;
     display: inline-block;
     margin-top: 60px;
@@ -87,8 +141,8 @@ header a {
 
 .tatry-photo {
     max-width: 100%;
-    border-radius:100px 100px 1px 100px;
-    box-shadow: -11px 6px 32px 5px rgba(152, 143, 127, 0.587);
+    border-radius:150px 150px 10px 150px;
+    box-shadow: -11px 15px 32px 5px #988f7f96;
     margin: 0 auto;
 }
 
@@ -103,7 +157,7 @@ main h2{
     line-height: 1.5;
     letter-spacing: 5px;
     color: var(--primary-color);
-    opacity: 0.2;
+    opacity: 0.4;
     text-transform: uppercase;
     margin: 0;
     
@@ -118,12 +172,39 @@ main h3{
     font-family: var(--heading-font-family);
 }
 
+main h4 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1;
+    color: #0098df;
+    margin: 0;
+}
+
+main h5 {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1;
+    letter-spacing: 3px;
+    color: #0098df;
+    margin: 0;
+}
+
 main p{
     font-size: 16px;
     line-height: 1.5;
     opacity: 0.7;
 }
 
+section {
+    max-width: 100%;
+    margin: 0;
+    padding: 100px;
+}
+
+section.secondary {
+background-color: #ffa52638;
+
+}
 
 footer{
     color:#fef1e6;
@@ -150,12 +231,14 @@ footer p{
 footer ul{
     margin: 0;
     padding: 0;
+    
 }
 
 footer li{
     list-style-type: none ;
     margin: 0;
     padding: 0;
+    
 }
 
 footer a {
@@ -185,6 +268,10 @@ footer a {
         grid-gap: 32px;
     }
 
+    .grid-3-columns {
+        grid-template-columns: 1fr;
+    }
+
     section {
         padding: 30px;
     }
@@ -192,5 +279,13 @@ footer a {
     .tatry-photo {
         transform: scale(0.9);
         
+    }
+
+    footer h3 {
+        font-size: 15px;
+    }
+
+   footer, footer p, a, ul {
+        font-size: 12px;
     }
 }
